@@ -1,11 +1,12 @@
+'use client'
 import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import { useTheme } from '../context/ThemeContext'
+
 import { motion } from 'motion/react'
 
 const Services = () => {
-  const { isDarkMode, setIsDarkMode } = useTheme()
+  
   return (
     
     <motion.div 
@@ -29,7 +30,7 @@ const Services = () => {
       whileInView={{opacity:1}}
       transition={{duration:0.5,delay:0.7}}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsa officiis sint odio alias. Modi vel laudantium animi, cumque saepe rerum optio et?
+        I help businesses and individuals solve real-world problems by delivering AI-powered tools and seamless web experiences. My focus is on creating solutions that are not just smart—but also practical, efficient, and user-friendly.
       </motion.p>
       <motion.div 
       initial={{opacity:0}}

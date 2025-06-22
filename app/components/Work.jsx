@@ -1,3 +1,4 @@
+'use client'
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
@@ -5,7 +6,7 @@ import { useTheme } from '../context/ThemeContext'
 import { motion } from 'motion/react'
 
 const Work = () => {
-    const { isDarkMode, setIsDarkMode } = useTheme()
+    const { isDarkMode } = useTheme()
     return (
         
         <motion.div 
@@ -29,7 +30,7 @@ const Work = () => {
             whileInView={{opacity:1}}
             transition={{delay:0.7,duration:0.5}}
             className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsa officiis sint odio alias. Modi vel laudantium animi, cumque saepe rerum optio et?
+                Take a look at some of my recent projects — combining AI innovation with modern web development. Each one is built with a focus on usability, performance, and solving real-world challenges.
             </motion.p>
             <motion.div 
             initial={{opacity:0}}

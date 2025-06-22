@@ -1,3 +1,4 @@
+'use client'
 import { assets,infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
@@ -5,14 +6,14 @@ import { useTheme } from '../context/ThemeContext'
 import { motion } from 'motion/react'
 
 const About = () => {
-  const { isDarkMode, setIsDarkMode } = useTheme()
+  const { isDarkMode} = useTheme()
   return (
     
     <motion.div 
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1}}
-    id='about ' className='w-full px-[12%] py-10 scroll-mt-20'>
+    id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
       <motion.h4 
       initial={{opacity:0,y:-20}}
       whileInView={{opacity:1,y:0}}
@@ -45,7 +46,14 @@ const About = () => {
         whileInView={{opacity:1}}
         transition={{duration:0.6,delay:0.8}}
         className='flex-1'>
-            <p className='mb-10 max-w-2xl font-Ovo'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero similique magni a. Hic cupiditate commodi corporis, aliquid distinctio sunt modi error quo vitae iusto possimus culpa debitis, recusandae exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corporis architecto expedita repellendus eius odio voluptas iusto at suscipit cumque! Voluptate expedita porro nam error est laudantiu</p>
+            <p className='mb-10 max-w-2xl font-Ovo'>I'm Sufyan Ali, an AI Developer passionate about turning 
+              complex problems into smart, real-world solutions. My expertise lies in machine learning, deep 
+              learning, and natural language processing, with a strong focus on projects like chatbots, 
+              CBIR-based brain tumor detection, and transformer-based models.
+
+            I enjoy working on AI systems that go beyond theory—delivering practical impact in healthcare, 
+            automation, and productivity. I also build clean, responsive web apps using Next.js to bring these 
+            AI solutions to life on the web.</p>
             
             <motion.ul 
             initial={{opacity:0}}

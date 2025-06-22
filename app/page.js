@@ -1,6 +1,6 @@
-'use client'
-import { useEffect, useState } from "react";
+
 import About from "./components/About";
+import Connect from "./components/Connect";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -11,9 +11,11 @@ import { ThemeProvider } from './context/ThemeContext'
 
 export default function Home() {
   return (
+    
     <ThemeProvider>
       <Navbar />
       <Header />
+      <Connect/>
       <About />
       <Services />
       <Work />
@@ -22,3 +24,6 @@ export default function Home() {
     </ThemeProvider>
   )
 }
+
+
+

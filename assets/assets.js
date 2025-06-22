@@ -14,9 +14,11 @@ import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
+import gitub_icon from './github-icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.jpg';
 import download_icon from './download-icon.png';
+import linkedin_icon from './linkedin-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
@@ -73,7 +75,9 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    linkedin_icon,
+    gitub_icon
 };
 
 export const workData = [
@@ -107,8 +111,8 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, C/C++, JavaScript React Js, Next Js, Assembly Language' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: "Bachelor's of Computer Science, FAST-NU, 2021-2025" },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 

@@ -1,22 +1,24 @@
+'use client'
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import { useTheme } from '../context/ThemeContext'
 import { motion } from "motion/react"
 
 function Header() {
-  const { isDarkMode, setIsDarkMode } = useTheme()
+  
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col
-    items-center justify-center gap-4'>
+    <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-44 flex flex-col items-center justify-center gap-4">
+
+
       <motion.div 
       initial={{scale:0}}
       whileInView={{scale:1}}
       transition={{duration:0.8 , type:'spring',stiffness:100}}
-      className='mt-10'>
+      >
         <Image
             src ={assets.profile_img}
             alt = "Profile Image"
+           
             className='rounded-full w-32 '
         />
 
@@ -47,8 +49,8 @@ function Header() {
         transition={{duration:0.6 , delay:0.7}}
       
          className='max-w-2xl mx-auto font-Ovo'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque illum provident 
-            distinctio modi aut eos pariatur </motion.p>
+            I’m an AI Developer passionate about building intelligent solutions using machine learning, NLP, and deep learning. I turn complex ideas into smart, user-friendly web apps with Next.js.
+        </motion.p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a
             initial={{y:30,opacity:0}}
